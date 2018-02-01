@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iteso.sesion5.ActivityMain">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/weight_size"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingTop="@dimen/padding"
+        android:padding="@dimen/padding"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_hint"/>
+        <EditText
+            android:id="@+id/edit_text_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="@string/phone_hint"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_view_escolaridad"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/land_text_size"/>
+        <Spinner
+            android:id="@+id/spinner_degree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/degree_values"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_view_genero"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/land_text_size"/>
+
+        <include layout="@layout/layout_gender"></include>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_view_Libro"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/land_text_size"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_books"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id="@+id/checkbox_sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_deporte"
+            android:checked="false"
+            />
+
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_clean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_clean"
+        android:onClick="limpiar"
+        />
+
+</LinearLayout>

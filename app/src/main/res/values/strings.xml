@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Sesion5</string>
+    <string name="name_hint">Ingrese su nombre</string>
+    <string name="phone_hint">Ingrese su telefono</string>
+    <string name="text_view_escolaridad">Escolaridad</string>
+    <string-array name="degree_values">
+        <item>Bachillerato</item>
+        <item>Técnico</item>
+        <item>Licenciatura</item>
+        <item>Maestría</item>
+        <item>Doctorado</item>
+    </string-array>
+    <string name="text_view_genero">Genero</string>
+    <string name="gender_male">Hombre</string>
+    <string name="gender_female">Mujer</string>
+    <string name="text_view_Libro">Libro Favorito</string>
+    <string name="check_deporte">Practica Deporte</string>
+    <string-array name="libros">
+        <item>Señor de los anillos, las dos torres</item>
+        <item>Origen</item>
+        <item>Simbolo Perdido</item>
+        <item>Divina Comedia</item>
+        <item>Cien años de soledad</item>
+        <item>Angeles y demonios</item>
+    </string-array>
+    <string name="button_clean">Limpiar</string>
+</resources>
